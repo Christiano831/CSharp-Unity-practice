@@ -24,6 +24,25 @@ public class LearningCurve : MonoBehaviour
 
         Debug.Log(currentAge + 1);
         ComputedAge();
+
+        //using a switch is very similar to an if-else just cleaner
+        string characterAction = "Attack";
+        switch(characterAction){
+            case "Heal":
+                Debug.Log("You have taken a potion.");
+                break;
+            case "Attack":
+                Debug.Log("You have swung your sword");
+                goto case "Hit";
+                // break;
+            case "Hit":
+                Debug.Log("Slash!");
+                break;
+            default:
+                Debug.Log("You brought up your shield");
+                break;
+        }
+        
     }
 
     // Update is called once per frame
