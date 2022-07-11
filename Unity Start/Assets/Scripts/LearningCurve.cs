@@ -42,6 +42,17 @@ public class LearningCurve : MonoBehaviour
                 Debug.Log("You brought up your shield");
                 break;
         }
+
+        //dictionaries are basically super lists (remind me of JSON)
+        Dictionary<string, int> itemInventory = new Dictionary<string, int>() {
+            {"Potion", 5},
+            {"Antidote", 7},
+            {"Super Potion", 1}
+        };
+        Debug.LogFormat("Items: {0}", itemInventory.Count);
+
+        Character hero = new Character();
+        Debug.LogFormat("Hero: {0} - {1} EXP", hero.name, hero.exp);
         
     }
 
