@@ -53,6 +53,8 @@ public class LearningCurve : MonoBehaviour
 
         Character hero = new Character();
         Debug.LogFormat("Hero: {0} - {1} EXP", hero.name, hero.exp);
+        Character heroine = new Character("Agatha");
+        Debug.LogFormat("Hero: {0} - {1} EXP", heroine.name, heroine.exp);
         
     }
 
