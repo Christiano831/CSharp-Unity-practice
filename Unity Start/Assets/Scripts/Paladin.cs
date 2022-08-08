@@ -4,5 +4,12 @@ using UnityEngine;
 
 public class Paladin: Character
 {
-    
+    public Weapon weapon;
+    public Paladin(string name, Weapon weapon): base(name){
+        this.weapon = weapon;
+    }
+    public override void PrintStatsInfo()
+    {
+        Debug.LogFormat("{0} draws their {1}!", name, weapon.name);
+    }
 }

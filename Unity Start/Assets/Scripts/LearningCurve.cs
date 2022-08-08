@@ -65,7 +65,8 @@ public class LearningCurve : MonoBehaviour
         warBow.damage = 155;
         huntingBow.PrintWeaponStats();
         warBow.PrintWeaponStats();
-        
+        Paladin knight = new Paladin("Rin", huntingBow);
+        knight.PrintStatsInfo();
     }
 
     // Update is called once per frame
