@@ -17,6 +17,10 @@ public class LearningCurve : MonoBehaviour
     //boolean
     public bool isAuthor = true;
 
+    private Transform camTransform;
+    public GameObject directionLight;
+    private Transform lightTransform;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -67,6 +71,11 @@ public class LearningCurve : MonoBehaviour
         warBow.PrintWeaponStats();
         Paladin knight = new Paladin("Rin", huntingBow);
         knight.PrintStatsInfo();
+        camTransform = this.GetComponent<Transform>();
+        Debug.Log(camTransform.localPosition);
+        directionLight = GameObject.Find("Directional Light");
+        lightTransform = directionLight.GetComponent<Transform>();
+        Debug.Log(lightTransform.localPosition);
     }
 
     // Update is called once per frame
