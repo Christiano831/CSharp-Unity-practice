@@ -18,6 +18,10 @@ public class Character
     public void PrintStatsInfo(){
         Debug.LogFormat("Hero: {0} - {1} EXP", name, exp);
     }
+    private void Reset(){
+        this.name = "Not assigned";
+        this.exp = 0;
+    }
 
 }
 

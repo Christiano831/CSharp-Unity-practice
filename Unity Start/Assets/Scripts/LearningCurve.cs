@@ -56,6 +56,7 @@ public class LearningCurve : MonoBehaviour
         hero2.name = "Arthur";
         hero.PrintStatsInfo();
         hero2.PrintStatsInfo();
+        //hero2.Reset();
         Character heroine = new Character("Agatha");
         Debug.LogFormat("Hero: {0} - {1} EXP", heroine.name, heroine.exp);
         Weapon huntingBow = new Weapon("Hunting Bow", 105);
